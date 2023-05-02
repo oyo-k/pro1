@@ -9,7 +9,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="関西学院大学" />
 
 <meta name="date" content="2023-05-02" />
 
@@ -1714,7 +1713,6 @@ border-radius: 0px;
 
 
 <h1 class="title toc-ignore">第二回課題</h1>
-<h4 class="author">大用庫智</h4>
 <h4 class="date">2023-05-02</h4>
 
 </div>
@@ -1808,10 +1806,11 @@ ModuleNotFoundError</h1>
 <li>エラーの種類：NameError</li>
 <li>発生箇所：「forward(100)」</li>
 <li>発生理由：「“name ‘forward’ is not defined”
-」はforwardとエラーメッセージが出力されているため、タートルグラフィックスのforwardという命令は、現在利用できないことを意味している。これは「from
+」というエラーメッセージが出力されているため、タートルグラフィックスのforwardという命令は、現在利用できないことを意味している。これは「from
 turtle import
 *」というタートルグラフィックスに必要な命令の読み込み処理がされていないためである。</li>
-<li>解消方法：タートルグラフィックスを冒頭で実行する</li>
+<li>解消方法：タートルグラフィックスを利用する命令「from turtle import
+*」を冒頭で実行する</li>
 </ul>
 <div id="その他事例" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> その他事例</h3>
@@ -1864,31 +1863,40 @@ rigth(144)」のように命令の冒頭に空白が存在することで発生�
 </div>
 <div id="不完全解答例" class="section level1" number="6">
 <h1><span class="header-section-number">6</span> 不完全解答例</h1>
-<p>下記のような事例では部分点## 説明不足-
-エラーの種類を明示的に答えてない。スクリーンショットでは、わかっていたとしても、エラーの種類を的確に答えているわけではない。-
-説明不足 - 例：done()をdon()としたため -
-たしかに、単にスペルミスなのだが…
-それが何の種類のエラーで、どんなエラーメッセージが出力され、それがどんな意味を持っているかを説明していない。スペルミスによってdon()という命令を実行しようとしていることに気がついているかは、レポートからは判断不可能-
-単に、エラーメッセージだけ書いてある</p>
-<div id="from-turtl-import" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> from turtl
-import*</h2>
-<p>二つのエラーを発生させており、部分的にしか説明していない</p>
+<p>下記のような事例では部分点</p>
+<div id="説明不足" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> 説明不足</h2>
+<ul>
+<li>エラーの種類を明示的に答えてない。スクリーンショットでは、わかっていたとしても、エラーの種類を的確に答えているわけではない。</li>
+<li>説明不足
+<ul>
+<li>例：done()をdon()としたため
+<ul>
+<li>たしかに、単にスペルミスなのだが…
+それが何の種類のエラーで、どんなエラーメッセージが出力され、それがどんな意味を持っているかを説明していない。スペルミスによってdon()という命令を実行しようとしていることに気がついているかは、レポートからは判断不可能</li>
+</ul></li>
+</ul></li>
+<li>単に、エラーメッセージだけ書いてある</li>
+</ul>
 </div>
-<div id="terminator" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Terminator</h2>
+<div id="複数のエラー" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> 複数のエラー</h2>
+<p>二つ以上のエラーを発生させており、部分的にしか説明していない。</p>
+</div>
+<div id="terminator" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Terminator</h2>
 <p>forward
 (100)やleft(‘144’)でエラーを発生させたつもりが、インタプリタ由来のエラーが優先されてしまうため、エラーの種類の記述ミスがある。Terminatorは教科書参照。</p>
 </div>
-<div id="部分的なエラーメッセージだけでエラーがわかる" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span>
+<div id="部分的なエラーメッセージだけでエラーがわかる" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span>
 部分的なエラーメッセージだけでエラーがわかる</h2>
 <p>NameErrorという文字だけでは、詳細は不明である。NameError: name 〇〇
 is not defined と
 エラーの箇所を示すメッセージから判定できる。単に「NameError」から〇〇が間違い、という説明は説明不足</p>
 </div>
-<div id="プログラムや実行結果不掲載" class="section level2" number="6.4">
-<h2><span class="header-section-number">6.4</span>
+<div id="プログラムや実行結果不掲載" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span>
 プログラムや実行結果不掲載</h2>
 <p>プログラムや実行結果もない場合は、課題の要件を満たしていない</p>
 </div>
